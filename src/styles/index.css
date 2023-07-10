@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+}
+
+#text-section {
+    margin: 60px auto 0px auto;
+    width: 600px;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#first-title {
+    color: hsl(234, 12%, 34%);
+    font-size: 28px;
+    font-weight: 200;
+}
+
+#second-title {
+    color: hsl(234, 12%, 34%);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#text {
+    color: hsl(234, 12%, 34%);
+    width: 540px;
+    margin: 20px auto 0px auto;
+}
+
+#blocks-section {
+    margin: 30px auto;
+    display: flex;
+    width: 1400px;
+    height: fit-content;
+}
+
+#first-block {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.350);
+    border-radius: 5px;
+    margin: auto 40px;
+    width: 390px;
+    height: 270px;
+}
+
+#column-blocks {
+    margin: 0px 30px;
+    width: 390px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#second-block {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.350);
+    border-radius: 5px;
+    margin: 30px 0px;
+    width: 390px;
+    height: 270px;
+}
+
+#third-block {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.350);
+    border-radius: 5px;
+    margin: 0px 0px;
+    width: 390px;
+    height: 270px;
+}
+
+#last-block {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.350);
+    border-radius: 5px;
+    margin: auto 40px;
+    width: 390px;
+    height: 270px;
+}
+
+.title {
+    color: hsl(234, 12%, 34%);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 30px 0px 10px 30px;
+}
+
+.text {
+    color: hsl(229, 6%, 66%);
+    width: 300px;
+    margin-left: 30px;
+}
+
+.img {
+    width: fit-content;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+
+@media (max-width: 800px) {
+    #text-section {
+        width: 90%;
+    }
+
+    #first-title, #second-title {
+        font-size: 22px;
+    }
+
+    #text {
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    #blocks-section {
+        width: 90%;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    #first-block, #second-block, #third-block, #last-block {
+        margin: 20px auto 0px auto;
+        width: 100%;
+    }
+
+    #column-blocks {
+        width: 100%;
+        height: fit-content;
+        margin: 0px auto;
+    }
+
+    .img {
+        margin-left: 80%;
+    }
+}
